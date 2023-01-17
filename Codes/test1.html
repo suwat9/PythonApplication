@@ -11,13 +11,18 @@
             color : green;            
         }
         #redText {
+            text-align: center;
+            font-weight: bold;
             color:red;
         }
         #blueText {
+            text-align: center;
             color:blue;
         }
         table, th, td {
-            border: 1px solid black;
+            color:blue;
+            background-color: yellow;
+            border: 2px solid red;
         }
     </style>  
     <body>
@@ -46,5 +51,16 @@
                 </td>
             </tr>
         </table>
+        <form action="POST">
+            <label for="fname">ชื่อ-นามสกุล :</label>
+            <input type="text" id="fname" name="fname">
+            <br><label for="email">Email :</label>
+            <input type="text" id="email" name="email">
+            <br><label for="gender">เพศ :</label>
+            <input type="radio" name="gender" id="male">
+            <label for="male">ผู้ชาย</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">ผู้หญิง</label>
+        </form>
     </body>
 </html>
