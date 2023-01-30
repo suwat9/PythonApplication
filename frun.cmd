@@ -3,4 +3,4 @@ py -3 -m venv .venv
 
 python -m pip install --upgrade pip
 python -m pip install flask
-python -m flask run -p 80
+python -m flask --app main.py run -p 80
